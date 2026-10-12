@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_URL = "http://localhost:8080/api/vehicles";
-
+const API_URL = `${import.meta.env.VITE_API_URL}/api/vehicles`;
 const initialForm = {
   vehicleNumber: "",
   brand: "",
